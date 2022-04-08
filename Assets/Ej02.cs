@@ -16,7 +16,8 @@ public class Ej02 : MonoBehaviour {
         if (resultante > dinerodisponible)
         {
             Debug.Log("Los productos superan el monto disponible");
-            resultante = (dinerodisponible - resultante);
+            resultante = (dinerodisponible - resultante );
+            resultante = (resultante - resultante *2);
             Debug.Log("A usted le faltan " +resultante+"");
         }
         else
